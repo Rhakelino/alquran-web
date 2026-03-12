@@ -101,7 +101,7 @@ function LastRead() {
 
   return (
     <div className={`
-      min-h-screen transition-colors duration-300 ease-in-out
+      min-h-screen
       ${isDarkMode ? 'bg-zinc-950 text-zinc-50' : 'bg-zinc-50 text-zinc-900'}
     `}>
       <div className="container mx-auto md:px-4 md:py-8 max-w-xl">

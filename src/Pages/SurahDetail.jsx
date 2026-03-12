@@ -163,7 +163,7 @@ function SurahDetail() {
   const showBismillah = parseInt(id) !== 1 && parseInt(id) !== 9;
 
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-500 font-sans pb-24">
+    <div className="min-h-screen bg-background text-foreground font-sans pb-24">
       {/* Modals */}
       <Dialog open={!!longPressVerse} onOpenChange={(open) => !open && setLongPressVerse(null)}>
         <DialogContent className="sm:max-w-md rounded-2xl">
@@ -265,7 +265,7 @@ function SurahDetail() {
       </Dialog>
 
       {/* Sticky Header */}
-      <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-background/80 border-b border-border/40 transition-colors">
+      <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-background/80 border-b border-border/40">
         <div className="container max-w-3xl mx-auto px-4 h-16 flex items-center justify-between">
           <button
             onClick={() => navigate('/quran')}
